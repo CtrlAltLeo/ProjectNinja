@@ -54,7 +54,7 @@ func _physics_process(delta):
 
 func getVectorToCursor():
 	
-	var v = (cursor.position - self.position).normalized()
+	var v = (cursor.global_position - self.position).normalized()
 	
 	grappleEffects = v
 	grappleSpeed = 500

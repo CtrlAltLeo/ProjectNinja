@@ -13,5 +13,8 @@ func _process(delta):
 		startLine()
 	
 func startLine():
-
-	get_parent().getVectorToCursor()
+	
+	for body in $Area2D.get_overlapping_bodies():
+		if body.name == "TileMap":
+	
+			get_parent().getVectorToCursor()
