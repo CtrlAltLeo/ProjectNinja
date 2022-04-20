@@ -1,6 +1,7 @@
 extends Node2D
 
 
+
 onready var parentPos = get_parent().position 
 
 func _process(delta):
@@ -12,8 +13,5 @@ func _process(delta):
 		startLine()
 	
 func startLine():
-	
-	var direction = get_parent().cursor.position - self.position
-	direction = direction.normalized()
-	
-	get_parent().grapple.startGrapple(direction)
+
+	get_parent().getVectorToCursor()
