@@ -6,8 +6,7 @@ onready var parentPos = get_parent().position
 
 func _process(delta):
 
-	self.position = get_viewport().get_mouse_position() - Vector2(512,300)
-	
+	self.position = get_viewport().get_mouse_position() * 2  + get_parent().camera.offset
 	
 	if Input.is_action_just_pressed("leftMouse"):
 		startLine()
