@@ -1,6 +1,7 @@
 extends Node2D
 
 
+
 onready var parentPos = get_parent().position 
 
 func _process(delta):
@@ -13,7 +14,7 @@ func _process(delta):
 	
 func startLine():
 	
-	var direction = get_parent().cursor.position - self.position
-	direction = direction.normalized()
+	for body in $Area2D.get_overlapping_bodies():
+		if body.name == "TileMap":
 	
-	get_parent().grapple.startGrapple(direction)
+			get_parent().getVectorToCursor()

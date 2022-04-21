@@ -9,11 +9,12 @@ var grapplePos = Vector2()
 
 func _process(delta):
 	
-	playerPos = get_parent().position
+	line.set_point_position(0, self.position)
+	line.set_point_position(1, get_parent().grappleEffects * 100)
 	
 	
 func startGrapple(direction):
 	
-	line.add_point(direction * 10 , 1)
+	pass
 	
 	
