@@ -27,8 +27,6 @@ func _physics_process(delta):
 	
 	direction.x = direction.x * speed
 	
-#	direction = direction + grappleEffects
-	
 	y_velo += GRAVITY
 	
 	direction.y = y_velo
