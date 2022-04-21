@@ -8,6 +8,7 @@ var y_velo = 0
 var grappleEffects = Vector2()
 var grappleSpeed = 0
 var isGrapple = false
+var isJump = false
 
 const GRAVITY = 15
 const JUMP_HEIGHT = -400
@@ -42,6 +43,7 @@ func _physics_process(delta):
 		speed = 100
 	if is_on_floor() and Input.is_action_just_pressed("space"):
 		y_velo = JUMP_HEIGHT
+		isJump = true
 	if isGrapple:
 		speed = 0
 	if grappleSpeed != 0:
@@ -50,12 +52,11 @@ func _physics_process(delta):
 		isGrapple = false
 	if y_velo < 0 and Input.is_action_just_released("space"):
 		y_velo += 100
+		isJump=false
 		
 	if grappleSpeed > 5:
 		grappleSpeed = grappleSpeed * pow(2.71, -0.01)
-		#print(grappleEffects)
-	print(isGrapple)
-
+	print(isJump)
 func getVectorToCursor():
 	
 	var v = (cursor.global_position - self.position).normalized()
