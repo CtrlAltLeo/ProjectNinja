@@ -14,7 +14,7 @@ const JUMP_HEIGHT = -400
 const MAXFALLSPEED = 200
 
 onready var camera = $playerCam
-onready var grapple = $grapplez
+onready var grapple = $grapple
 onready var cursor = $cursor
 
 
@@ -53,8 +53,7 @@ func _physics_process(delta):
 		
 	if grappleSpeed > 5:
 		grappleSpeed = grappleSpeed * pow(2.71, -0.01)
-		#print(grappleEffects)
-	print(isGrapple)
+		
 
 func getVectorToCursor():
 	
