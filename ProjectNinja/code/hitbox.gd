@@ -16,5 +16,7 @@ func _process(delta):
 		if boxType == "hitbox" and collider.boxtype == "hurtbox":
 			emit_signal("hit")
 			
+		
+			
 func hitbox():
 	pass
