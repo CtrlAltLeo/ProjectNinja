@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var hp = 3
+var hp = 50
 
 var speed = 100
 var y_velo = 0
@@ -39,7 +39,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		y_velo = 0
 		grappleSpeed = 0
-		speed = 100
+		speed = 200
 	if is_on_floor() and Input.is_action_just_pressed("space"):
 		y_velo = JUMP_HEIGHT
 	if isGrapple:
@@ -62,7 +62,7 @@ func getVectorToCursor():
 	grappleEffects = v
 	grappleSpeed = 500
 	
-	
-	
+
 func takeDamage(d):
 	print("AMONGUS")
+
