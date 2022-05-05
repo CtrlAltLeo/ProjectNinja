@@ -23,14 +23,6 @@ func flip():
 	
 	movementDirection *= -1
 	
-	
-
-	
-	
-
-	
-	
-
 
 func flipcasterenterBody(body):
 	

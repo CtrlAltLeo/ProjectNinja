@@ -62,3 +62,7 @@ func getVectorToCursor():
 	grappleEffects = v
 	grappleSpeed = 500
 	
+	
+	
+func takeDamage(d):
+	print("AMONGUS")

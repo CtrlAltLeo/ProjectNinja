@@ -11,7 +11,7 @@ extents = Vector2( 31.9566, 33.416 )
 
 [sub_resource type="RectangleShape2D" id=2]
 resource_local_to_scene = true
-extents = Vector2( 31.3588, 30.3301 )
+extents = Vector2( 35.209, 35.1626 )
 
 [node name="player" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -38,5 +38,7 @@ boxType = "hurtbox"
 [node name="CollisionShape2D" parent="hitBox" index="0"]
 position = Vector2( 104.235, -2.22725 )
 shape = SubResource( 2 )
+
+[connection signal="hurt" from="hitBox" to="." method="takeDamage"]
 
 [editable path="hitBox"]
