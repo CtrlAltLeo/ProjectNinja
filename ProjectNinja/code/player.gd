@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-var hp = 3
+var hp = 50
 
-var speed = 100
+var speed = 1
 var y_velo = 0
 
 var grappleEffects = Vector2()
@@ -62,3 +62,4 @@ func getVectorToCursor():
 	grappleEffects = v
 	grappleSpeed = 500
 	
+
