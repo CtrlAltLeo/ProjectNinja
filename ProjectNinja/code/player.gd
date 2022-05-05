@@ -66,3 +66,4 @@ func getVectorToCursor():
 func takeDamage(d):
 	print("AMONGUS")
 
+#TEST
