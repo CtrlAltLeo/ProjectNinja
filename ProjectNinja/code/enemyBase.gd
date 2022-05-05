@@ -32,14 +32,6 @@ func _physics_process(delta):
 func flip():
 	
 	movementDirection *= -1
-	
-
-
-	
-	
-
-	
-	
 
 
 func flipcasterenterBody(body):

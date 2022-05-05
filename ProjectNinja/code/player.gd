@@ -63,3 +63,6 @@ func getVectorToCursor():
 	grappleSpeed = 500
 	
 
+func takeDamage(d):
+	print("AMONGUS")
+
