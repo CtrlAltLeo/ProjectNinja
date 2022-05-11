@@ -13,6 +13,9 @@ const MAXFALLSPEED = 200
 var y_velo = 0
 const max_fall_speed = 40
 
+func _ready():
+	$hitBox.damage = damageToPlayer
+
 func _physics_process(delta):
 	
 	var direction = Vector2()
