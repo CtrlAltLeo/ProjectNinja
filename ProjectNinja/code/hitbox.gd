@@ -20,12 +20,11 @@ func _process(delta):
 		if not "boxType" in collider:
 			continue
 		
-		
 		if isHit: 
 			return
 		
 		if boxType == "hitbox" and collider.boxType == "hurtbox":
-			emit_signal("hit", damage)
+			emit_signal("deliverHit")
 			collider.emit_signal("hurt", damage)
 			
 			isHit = true

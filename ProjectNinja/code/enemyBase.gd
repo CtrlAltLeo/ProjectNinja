@@ -37,3 +37,6 @@ func flip():
 func flipcasterenterBody(body):
 	
 	flip()
+	
+func die():
+	queue_free()

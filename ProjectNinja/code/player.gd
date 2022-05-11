@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var hp = 50
+var hp = 11
 
 var speed = 100
 var y_velo = 0
@@ -64,5 +64,15 @@ func getVectorToCursor():
 	
 
 func takeDamage(d):
-	print("AMONGUS")
+	calculateDamage(d)
+	
+func calculateDamage(d):
+	
+	if hp - d > 0:
+		hp -= d
+	else:
+		die()
+		
+func die():
+	queue_free()
 
