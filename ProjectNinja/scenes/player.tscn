@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/hitbox.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 31.9566, 33.416 )
+extents = Vector2( 31.9566, 32.708 )
 
 [sub_resource type="RectangleShape2D" id=2]
 resource_local_to_scene = true
@@ -17,6 +17,7 @@ extents = Vector2( 35.209, 35.1626 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -0.708 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -31,14 +32,23 @@ offset = Vector2( -512, -300 )
 anchor_mode = 0
 current = true
 
-[node name="hitBox" parent="." instance=ExtResource( 5 )]
+[node name="RichTextLabel" type="RichTextLabel" parent="playerCam"]
+margin_left = -479.0
+margin_top = -279.0
+margin_right = -439.0
+margin_bottom = -239.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hurtBox" parent="." instance=ExtResource( 5 )]
 position = Vector2( -103.944, 1.88989 )
 boxType = "hurtbox"
 
-[node name="CollisionShape2D" parent="hitBox" index="0"]
+[node name="CollisionShape2D" parent="hurtBox" index="0"]
 position = Vector2( 104.235, -2.22725 )
 shape = SubResource( 2 )
 
-[connection signal="hurt" from="hitBox" to="." method="takeDamage"]
+[connection signal="hurt" from="hurtBox" to="." method="takeDamage"]
 
-[editable path="hitBox"]
+[editable path="hurtBox"]

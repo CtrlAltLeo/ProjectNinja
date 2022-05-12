@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
+
 var hp = 100
+
 
 var speed = 100
 var y_velo = 0
@@ -20,6 +22,9 @@ onready var cursor = $cursor
 
 
 func _physics_process(delta):
+	
+	$playerCam/RichTextLabel.text = str(hp)
+
 	
 	var direction = Vector2()
 	
