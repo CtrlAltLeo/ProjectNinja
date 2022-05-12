@@ -1,6 +1,8 @@
 extends KinematicBody2D
 
-export var hp = 11
+
+var hp = 100
+
 
 var speed = 100
 var y_velo = 0
@@ -10,8 +12,8 @@ var grappleSpeed = 0
 var isGrapple = false
 
 const GRAVITY = 15
-const JUMP_HEIGHT = -400
-const MAXFALLSPEED = 200
+const JUMP_HEIGHT = -500
+const MAXFALLSPEED = 300
 
 onready var camera = $playerCam
 onready var grapple = $grapple

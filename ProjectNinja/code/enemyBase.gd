@@ -4,7 +4,7 @@ extends KinematicBody2D
 var movementDirection = Vector2(-1, 0)
 
 export var HP = 0
-export var damageToPlayer = 5
+export var damageToPlayer = 10
 export var speed = 10
 const GRAVITY = 15
 const JUMP_HEIGHT = -400
