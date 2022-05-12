@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var hp = 11
+export var hp = 11
 
 var speed = 100
 var y_velo = 0
@@ -20,6 +20,7 @@ onready var cursor = $cursor
 
 
 func _physics_process(delta):
+
 	
 	var direction = Vector2()
 	
