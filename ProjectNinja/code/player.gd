@@ -20,6 +20,8 @@ onready var cursor = $cursor
 
 
 func _physics_process(delta):
+	
+	$playerCam/RichTextLabel.text = str(hp)
 
 	
 	var direction = Vector2()

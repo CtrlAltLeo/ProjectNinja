@@ -32,6 +32,15 @@ offset = Vector2( -512, -300 )
 anchor_mode = 0
 current = true
 
+[node name="RichTextLabel" type="RichTextLabel" parent="playerCam"]
+margin_left = -479.0
+margin_top = -279.0
+margin_right = -439.0
+margin_bottom = -239.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="hurtBox" parent="." instance=ExtResource( 5 )]
 position = Vector2( -103.944, 1.88989 )
 boxType = "hurtbox"
