@@ -18,6 +18,8 @@ onready var camera = $playerCam
 onready var grapple = $grapple
 onready var cursor = $cursor
 
+var invulerable = false
+
 
 
 func _physics_process(delta):
@@ -68,15 +70,25 @@ func getVectorToCursor():
 	
 
 func takeDamage(d):
-	calculateDamage(d)
+	
+	if invulerable == false:
+	
+		calculateDamage(d)
+		invulerable = true
 	
 func calculateDamage(d):
 	
 	if hp - d > 0:
 		hp -= d
+		$AnimationPlayer.play("hurt")
 	else:
 		die()
 		
 func die():
-	queue_free()
+	hp = 100
+	self.position = get_parent().respawnPos
 
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	invulerable = false
