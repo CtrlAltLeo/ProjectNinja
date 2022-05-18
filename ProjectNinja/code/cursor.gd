@@ -1,6 +1,6 @@
 extends Node2D
 
-
+var canClick = false
 
 onready var parentPos = get_parent().position 
 
@@ -13,7 +13,11 @@ func _process(delta):
 	
 func startLine():
 	
-	for body in $Area2D.get_overlapping_bodies():
-		if body.name == "TileMap":
+	if canClick:
+		get_parent().getVectorToCursor()
+		canClick = false
 	
-			get_parent().getVectorToCursor()
+#	for body in $Area2D.get_overlapping_bodies():
+#		if body.name == "TileMap":
+#
+#			get_parent().getVectorToCursor()

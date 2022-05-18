@@ -20,9 +20,19 @@ onready var cursor = $cursor
 
 var invulerable = false
 
+var canJump = true
+
 
 
 func _physics_process(delta):
+	
+	$RayCast2D.cast_to = $cursor.position
+	
+	if $RayCast2D.is_colliding() and canJump:
+		if $RayCast2D.get_collider().name == "TileMap":
+			$cursor.canClick = true
+		else:
+			$cursor.canClick = false
 	
 	$playerCam/RichTextLabel.text = str(hp)
 
@@ -68,6 +78,9 @@ func getVectorToCursor():
 	grappleEffects = v
 	grappleSpeed = 500
 	
+	$grappleTimer.start()
+	canJump = false
+	
 
 func takeDamage(d):
 	
@@ -92,3 +105,7 @@ func die():
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	invulerable = false
+
+
+func _on_grappleTimer_timeout():
+	canJump = true
