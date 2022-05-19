@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/testing.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
+
+[node name="betterlvllast" instance=ExtResource( 2 )]
+
+[node name="TileMap" parent="." index="0"]
+tile_data = PoolIntArray( -1507349, 6, 0, -1507348, 6, 0, -1507347, 6, 0, -1507346, 6, 0, -1441810, 6, 0, -1376274, 6, 0, -1310738, 6, 0, -1376251, 6, 0, -1376250, 6, 0, -1376249, 6, 0, -1376248, 6, 0, -1376247, 6, 0, -1376246, 6, 0, -1376245, 6, 0, -1245202, 6, 0, -1310708, 6, 0, -1179666, 6, 0, -1245171, 6, 0, -1114130, 6, 0, -1179634, 6, 0, -1114110, 6, 0, -1114109, 6, 0, -1114108, 6, 0, -1114107, 6, 0, -1114106, 6, 0, -1114097, 6, 0, -1048561, 6, 0, -983025, 6, 0, -917489, 6, 0, -851953, 6, 0, -786417, 6, 0, -458743, 6, 0, -393207, 6, 0, -196593, 6, 0, -131057, 6, 0, -65521, 6, 0, 15, 6, 0, 65551, 6, 0, 131072, 6, 0, 196608, 6, 0, 262144, 6, 0, 327680, 6, 0, 393216, 6, 0, 589831, 6, 0, 655367, 6, 0, 720903, 6, 0, 786439, 6, 0, 1179648, 6, 0, 1179649, 6, 0, 1179650, 6, 0, 1179651, 6, 0, 1703935, 0, 0 )
+
+[node name="player" parent="." index="1" instance=ExtResource( 3 )]
+position = Vector2( 56, 532 )
+
+[node name="spike" parent="." index="2" instance=ExtResource( 1 )]
+position = Vector2( -533, -752 )
+rotation = 1.5708
