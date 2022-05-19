@@ -175,7 +175,11 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 8/texture = ExtResource( 2 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
+<<<<<<< HEAD
 8/region = Rect2( 51, 68, 16, 16 )
+=======
+8/region = Rect2( 459, 406, 15, 19 )
+>>>>>>> daffdd03505bd729971e161a4f188ae90b90e7b3
 8/tile_mode = 0
 8/occluder_offset = Vector2( 0, 0 )
 8/navigation_offset = Vector2( 0, 0 )
@@ -185,6 +189,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 8/shape_one_way_margin = 0.0
 8/shapes = [  ]
 8/z_index = 0
+<<<<<<< HEAD
 9/name = "water"
 9/texture = ExtResource( 2 )
 9/tex_offset = Vector2( 0, 0 )
@@ -199,6 +204,8 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 9/shape_one_way_margin = 0.0
 9/shapes = [  ]
 9/z_index = 0
+=======
+>>>>>>> daffdd03505bd729971e161a4f188ae90b90e7b3
 
 [node name="main" type="Node2D"]
 script = ExtResource( 1 )
