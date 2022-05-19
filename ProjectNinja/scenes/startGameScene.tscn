@@ -19,9 +19,6 @@ margin_top = 141.653
 margin_right = 562.94
 margin_bottom = 161.653
 text = "PLAY"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Control" type="Control" parent="."]
 anchor_left = 1.0
