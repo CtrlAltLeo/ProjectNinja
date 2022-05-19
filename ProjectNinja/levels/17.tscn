@@ -1,0 +1,256 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/testing.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/enemyBase.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/checkpoint.tscn" type="PackedScene" id=5]
+
+[node name="17" instance=ExtResource( 1 )]
+position = Vector2( 2, -2 )
+
+[node name="TileMap" parent="." index="0"]
+position = Vector2( 0, 2 )
+tile_data = PoolIntArray( -1048502, 6, 0, -1048501, 6, 0, -1048500, 6, 0, -1048499, 6, 0, -1048498, 6, 0, -1048497, 6, 0, -1048496, 6, 0, -1048495, 6, 0, -1048494, 6, 0, -1048493, 6, 0, -1048492, 6, 0, -1048491, 6, 0, -1048490, 6, 0, -1048489, 6, 0, -1048488, 6, 0, -1048487, 6, 0, -982970, 6, 0, -982969, 6, 0, -982968, 6, 0, -982967, 6, 0, -982966, 6, 0, -982950, 6, 0, -917435, 6, 0, -917434, 6, 0, -917414, 6, 0, -851901, 6, 0, -851900, 6, 0, -851878, 6, 0, -786365, 6, 0, -786342, 6, 0, -720831, 6, 0, -720830, 6, 0, -720822, 6, 0, -720806, 6, 0, -655296, 6, 0, -655295, 6, 0, -655293, 6, 0, -655276, 6, 0, -655275, 6, 0, -655274, 6, 0, -655273, 6, 0, -655272, 6, 0, -655271, 6, 0, -589761, 6, 0, -589760, 6, 0, -589756, 6, 0, -589747, 6, 0, -589746, 6, 0, -589745, 6, 0, -589744, 6, 0, -589743, 6, 0, -589742, 6, 0, -589741, 6, 0, -524226, 6, 0, -524225, 6, 0, -524220, 6, 0, -524211, 6, 0, -458690, 6, 0, -458684, 6, 0, -458683, 6, 0, -458682, 6, 0, -458681, 6, 0, -458680, 6, 0, -458675, 6, 0, -393155, 6, 0, -393154, 6, 0, -393139, 6, 0, -327620, 6, 0, -327619, 6, 0, -327603, 6, 0, -262084, 6, 0, -262067, 6, 0, -131076, 0, 0, -131075, 0, 0, -196567, 6, 0, -196566, 6, 0, -196565, 6, 0, -196564, 6, 0, -196563, 6, 0, -196562, 6, 0, -196561, 6, 0, -196560, 6, 0, -196559, 6, 0, -196558, 6, 0, -196557, 6, 0, -196556, 6, 0, -196555, 6, 0, -196554, 6, 0, -196553, 6, 0, -196552, 6, 0, -196551, 6, 0, -196550, 6, 0, -196549, 6, 0, -196531, 6, 0, -65540, 0, 0, -65539, 0, 0, -131061, 0, 0, -131031, 6, 0, -131004, 6, 0, -131003, 6, 0, -131002, 6, 0, -131001, 6, 0, -131000, 6, 0, -130995, 6, 0, -65496, 6, 0, -65495, 6, 0, -65459, 6, 0, 9, 6, 0, 10, 6, 0, 11, 6, 0, 12, 6, 0, 13, 6, 0, 14, 6, 0, 15, 6, 0, 16, 6, 0, 17, 6, 0, 18, 6, 0, 19, 6, 0, 20, 6, 0, 21, 6, 0, 22, 6, 0, 23, 6, 0, 24, 6, 0, 25, 6, 0, 26, 6, 0, 35, 6, 0, 36, 6, 0, 37, 6, 0, 38, 6, 0, 39, 6, 0, 40, 6, 0, 77, 6, 0, 65542, 0, 0, 65543, 0, 0, 65544, 6, 0, 65563, 6, 0, 65564, 6, 0, 65565, 6, 0, 65566, 6, 0, 65567, 6, 0, 65568, 6, 0, 65569, 6, 0, 65570, 6, 0, 65612, 6, 0, 65613, 6, 0, 131080, 6, 0, 131148, 6, 0, 196617, 6, 0, 196681, 6, 0, 196682, 6, 0, 196683, 6, 0, 196684, 6, 0, 262153, 6, 0, 262186, 6, 0, 262187, 6, 0, 262188, 6, 0, 262201, 6, 0, 262202, 6, 0, 262203, 6, 0, 262204, 6, 0, 262205, 6, 0, 262206, 6, 0, 262207, 6, 0, 262208, 6, 0, 262209, 6, 0, 262210, 6, 0, 262211, 6, 0, 262212, 6, 0, 262213, 6, 0, 262214, 6, 0, 262215, 6, 0, 262216, 6, 0, 262217, 6, 0, 327690, 6, 0, 327721, 6, 0, 327722, 6, 0, 327725, 6, 0, 327736, 6, 0, 393226, 6, 0, 393257, 6, 0, 393261, 6, 0, 393272, 6, 0, 458763, 6, 0, 458792, 6, 0, 458793, 6, 0, 458797, 6, 0, 458808, 6, 0, 524299, 6, 0, 524311, 6, 0, 524312, 6, 0, 524313, 6, 0, 524314, 6, 0, 524322, 6, 0, 524323, 6, 0, 524324, 6, 0, 524325, 6, 0, 524326, 6, 0, 524327, 6, 0, 524328, 6, 0, 524334, 6, 0, 524335, 6, 0, 524336, 6, 0, 524337, 6, 0, 524338, 6, 0, 524339, 6, 0, 524340, 6, 0, 524341, 6, 0, 524342, 6, 0, 524343, 6, 0, 589836, 6, 0, 589846, 6, 0, 589850, 6, 0, 589858, 6, 0, 655372, 6, 0, 655381, 6, 0, 655386, 6, 0, 655394, 6, 0, 720909, 6, 0, 720910, 6, 0, 720911, 6, 0, 720912, 6, 0, 720913, 6, 0, 720914, 6, 0, 720915, 6, 0, 720916, 6, 0, 720917, 6, 0, 720922, 6, 0, 720923, 6, 0, 720924, 6, 0, 720925, 6, 0, 720926, 6, 0, 720927, 6, 0, 720928, 6, 0, 720929, 6, 0, 720930, 6, 0, 851967, 0, 0, 983039, 0, 0, 1048575, 0, 0, 1114111, 0, 0, 1179647, 0, 0, 1245183, 0, 0, 1310719, 0, 0, 1376255, 0, 0, 1507327, 0, 0, 1572863, 0, 0, 1638399, 0, 0, 1703935, 0, 0 )
+
+[node name="spike" parent="." index="1" instance=ExtResource( 3 )]
+position = Vector2( -360, -127 )
+
+[node name="spikegroup1" parent="." index="2" instance=ExtResource( 3 )]
+position = Vector2( 892, 337 )
+
+[node name="spike3" parent="spikegroup1" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup1" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup1" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup1" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup1" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike8" parent="spikegroup1" index="7" instance=ExtResource( 3 )]
+position = Vector2( 87, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spikegroup2" parent="." index="3" instance=ExtResource( 3 )]
+position = Vector2( 1084, 79 )
+rotation = 3.14159
+
+[node name="spike3" parent="spikegroup2" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup2" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup2" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup2" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup2" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike8" parent="spikegroup2" index="7" instance=ExtResource( 3 )]
+position = Vector2( 87, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spikegroup3" parent="." index="4" instance=ExtResource( 3 )]
+position = Vector2( 1648, -47 )
+rotation = 3.14159
+
+[node name="spike3" parent="spikegroup3" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup3" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup3" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup3" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup3" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike8" parent="spikegroup3" index="7" instance=ExtResource( 3 )]
+position = Vector2( 87, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike9" parent="spikegroup3" index="8" instance=ExtResource( 3 )]
+position = Vector2( -16, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike10" parent="spikegroup3" index="9" instance=ExtResource( 3 )]
+position = Vector2( -31, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike11" parent="spikegroup3" index="10" instance=ExtResource( 3 )]
+position = Vector2( -48, -0.999996 )
+scale = Vector2( 1, 1 )
+
+[node name="spike12" parent="spikegroup3" index="11" instance=ExtResource( 3 )]
+position = Vector2( -67, 5.72205e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spikegroup4" parent="." index="5" instance=ExtResource( 3 )]
+position = Vector2( 2140, 116 )
+
+[node name="spike3" parent="spikegroup4" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup4" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup4" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup4" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup4" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike8" parent="spikegroup4" index="7" instance=ExtResource( 3 )]
+position = Vector2( 87, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike13" parent="spikegroup4" index="8" instance=ExtResource( 3 )]
+position = Vector2( 105, -15 )
+scale = Vector2( 1, 1 )
+
+[node name="spike14" parent="spikegroup4" index="9" instance=ExtResource( 3 )]
+position = Vector2( 121, -14 )
+scale = Vector2( 1, 1 )
+
+[node name="spike15" parent="spikegroup4" index="10" instance=ExtResource( 3 )]
+position = Vector2( 135.5, -16 )
+scale = Vector2( 1, 1 )
+
+[node name="spike16" parent="spikegroup4" index="11" instance=ExtResource( 3 )]
+position = Vector2( 152.5, -46.5 )
+scale = Vector2( 1, 1 )
+
+[node name="spike9" parent="spikegroup4" index="12" instance=ExtResource( 3 )]
+position = Vector2( -16, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike10" parent="spikegroup4" index="13" instance=ExtResource( 3 )]
+position = Vector2( -31, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike11" parent="spikegroup4" index="14" instance=ExtResource( 3 )]
+position = Vector2( -48, -0.999996 )
+scale = Vector2( 1, 1 )
+
+[node name="spike12" parent="spikegroup4" index="15" instance=ExtResource( 3 )]
+position = Vector2( -67, 5.72205e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spikegroup5" parent="." index="6" instance=ExtResource( 3 )]
+position = Vector2( 2455, -126 )
+rotation = -1.5708
+
+[node name="spike3" parent="spikegroup5" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup5" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup5" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup5" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup5" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike9" parent="spikegroup5" index="7" instance=ExtResource( 3 )]
+position = Vector2( -16, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike10" parent="spikegroup5" index="8" instance=ExtResource( 3 )]
+position = Vector2( -31, 1.90735e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spike11" parent="spikegroup5" index="9" instance=ExtResource( 3 )]
+position = Vector2( -48, -0.999996 )
+scale = Vector2( 1, 1 )
+
+[node name="spike12" parent="spikegroup5" index="10" instance=ExtResource( 3 )]
+position = Vector2( -67, 5.72205e-06 )
+scale = Vector2( 1, 1 )
+
+[node name="spikegroup6" parent="." index="7" instance=ExtResource( 3 )]
+position = Vector2( 2495, -300 )
+
+[node name="spike3" parent="spikegroup6" index="2" instance=ExtResource( 3 )]
+position = Vector2( 13, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike4" parent="spikegroup6" index="3" instance=ExtResource( 3 )]
+position = Vector2( 28, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike5" parent="spikegroup6" index="4" instance=ExtResource( 3 )]
+position = Vector2( 45, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike6" parent="spikegroup6" index="5" instance=ExtResource( 3 )]
+position = Vector2( 59, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="spike7" parent="spikegroup6" index="6" instance=ExtResource( 3 )]
+position = Vector2( 74, -1 )
+scale = Vector2( 1, 1 )
+
+[node name="spike8" parent="spikegroup6" index="7" instance=ExtResource( 3 )]
+position = Vector2( 87, 0 )
+scale = Vector2( 1, 1 )
+
+[node name="player" parent="." index="8" instance=ExtResource( 4 )]
+position = Vector2( 516, 306 )
+
+[node name="enemyBase" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( -313, 61 )
+
+[node name="enemyBase2" parent="." index="10" instance=ExtResource( 2 )]
+position = Vector2( 1703, 208 )
+HP = 10
+speed = 100
+
+[node name="checkpoint" parent="." index="11" instance=ExtResource( 5 )]
+position = Vector2( 2788, -345 )

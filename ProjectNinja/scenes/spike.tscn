@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/hitbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://artAssets/tiles/roguelikeSheet_transparent.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
+extents = Vector2( 6.19928, 5.47166 )
+
+[node name="spike" type="Node2D"]
+scale = Vector2( 2, 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 918, 357, 16, 16 )
+
+[node name="hitBox" parent="." instance=ExtResource( 1 )]
+damage = 10
+
+[node name="CollisionShape2D" parent="hitBox" index="0"]
+position = Vector2( -0.236237, 0.629961 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="hitBox"]
+polygon = PoolVector2Array( -7.89608, 5.39515, -6.32118, 0.670452, -2.30518, -1.06194, -0.257813, -5.15668, 1.78956, -5.55041, 4.62438, -2.32186, 5.64807, 2.08786, 7.30172, 3.26904, 6.7505, 5.39515 )
+
+[editable path="hitBox"]
