@@ -11,7 +11,7 @@ var grappleSpeed = 0
 var isGrapple = false
 
 const GRAVITY = 15
-const JUMP_HEIGHT = -500
+const JUMP_HEIGHT = -300
 const MAXFALLSPEED = 300
 
 onready var camera = $playerCam
