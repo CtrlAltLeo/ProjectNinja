@@ -7,17 +7,17 @@
 script = ExtResource( 1 )
 
 [node name="quit" type="Button" parent="."]
-margin_left = 437.431
-margin_top = 188.871
-margin_right = 580.431
-margin_bottom = 208.871
+margin_left = 435.5
+margin_top = 190.0
+margin_right = 585.5
+margin_bottom = 210.0
 text = "QUIT"
 
 [node name="play" type="Button" parent="."]
-margin_left = 465.94
-margin_top = 141.653
-margin_right = 562.94
-margin_bottom = 161.653
+margin_left = 460.5
+margin_top = 129.0
+margin_right = 560.5
+margin_bottom = 149.0
 text = "PLAY"
 
 [node name="Control" type="Control" parent="."]
@@ -29,9 +29,6 @@ margin_left = 8.0
 margin_top = -2.0
 margin_right = 1025.0
 margin_bottom = 116.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Container" type="Container" parent="Control"]
 anchor_left = 0.5
