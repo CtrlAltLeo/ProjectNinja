@@ -50,8 +50,12 @@ damage = 2
 position = Vector2( 0.5, 0.5 )
 shape = SubResource( 4 )
 
+[node name="hurtBox" parent="." instance=ExtResource( 3 )]
+boxType = "hurtbox"
+
 [connection signal="body_entered" from="flipCaster" to="." method="flipcasterenterBody"]
 [connection signal="body_entered" from="flipCaster2" to="." method="flipcasterenterBody"]
 [connection signal="deliverHit" from="hitBox" to="." method="die"]
+[connection signal="hurt" from="hurtBox" to="." method="die"]
 
 [editable path="hitBox"]

@@ -42,4 +42,5 @@ func flipcasterenterBody(body):
 	flip()
 	
 func die():
+	print(name + "died")
 	queue_free()
