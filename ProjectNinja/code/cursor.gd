@@ -1,19 +1,23 @@
 extends Node2D
 
-
+var canClick = false
 
 onready var parentPos = get_parent().position 
 
 func _process(delta):
 
-	self.position = get_viewport().get_mouse_position() * 2  + get_parent().camera.offset
+	self.position = get_viewport().get_mouse_position()  + get_parent().camera.offset
 	
 	if Input.is_action_just_pressed("leftMouse"):
 		startLine()
 	
 func startLine():
 	
-	for body in $Area2D.get_overlapping_bodies():
-		if body.name == "TileMap":
+	if canClick:
+		get_parent().getVectorToCursor()
+		canClick = false
 	
-			get_parent().getVectorToCursor()
+#	for body in $Area2D.get_overlapping_bodies():
+#		if body.name == "TileMap":
+#
+#			get_parent().getVectorToCursor()
