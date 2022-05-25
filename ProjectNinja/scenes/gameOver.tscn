@@ -1,0 +1,18 @@
+[gd_scene format=2]
+
+[node name="gameOver" type="Node2D"]
+
+[node name="GG" type="RichTextLabel" parent="."]
+margin_left = 346.0
+margin_top = 56.0
+margin_right = 769.0
+margin_bottom = 479.0
+text = "GG I guess
+
+You won! 
+
+See you later space cowboy!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}

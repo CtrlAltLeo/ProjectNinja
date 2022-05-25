@@ -14,3 +14,4 @@ tile_data = PoolIntArray( -3211232, -1610612730, 0, -3211231, -1610612730, 0, -3
 
 [node name="checkpoint" parent="." index="2" instance=ExtResource( 3 )]
 position = Vector2( 1864, -1340 )
+targetScenePath = "res://levels/17.tscn"

@@ -254,3 +254,4 @@ speed = 100
 
 [node name="checkpoint" parent="." index="11" instance=ExtResource( 5 )]
 position = Vector2( 2788, -345 )
+targetScenePath = "res://levels/Bob.tscn"

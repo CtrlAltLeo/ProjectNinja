@@ -48,7 +48,7 @@ __meta__ = {
 
 [node name="checkpoint" parent="." index="5" instance=ExtResource( 4 )]
 position = Vector2( 2257.41, -1560.22 )
-targetScenePath = "res://levels/level2.tscn"
+targetScenePath = "res://levels/Maxlvl4.tscn"
 
 [node name="spikes" type="Node2D" parent="." index="6"]
 

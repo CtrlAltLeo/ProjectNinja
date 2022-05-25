@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-var hp = 100
+var hp = 50
 
 var speed = 100
 var y_velo = 0
